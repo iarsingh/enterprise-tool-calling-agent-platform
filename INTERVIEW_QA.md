@@ -81,11 +81,11 @@ This is a concrete regression example from the repository. Its assertions establ
 - `GET /healthz` → `healthz` in [`src/enttools/main.py`](src/enttools/main.py#L10).
 - `GET /tools` → `tools` in [`src/enttools/main.py`](src/enttools/main.py#L15).
 - `POST /call` → `post_call` in [`src/enttools/main.py`](src/enttools/main.py#L20).
-- `GET /readyz` → `readyz` in [`src/enttools/ops.py`](src/enttools/ops.py#L44).
-- `POST /workspaces` → `create_workspace` in [`src/enttools/ops.py`](src/enttools/ops.py#L49).
-- `GET /workspaces` → `list_workspaces` in [`src/enttools/ops.py`](src/enttools/ops.py#L66).
-- `POST /workspaces/{workspace_id}/jobs` → `create_job` in [`src/enttools/ops.py`](src/enttools/ops.py#L73).
-- `GET /jobs/{job_id}` → `get_job` in [`src/enttools/ops.py`](src/enttools/ops.py#L96).
+- `GET /readyz` → `readyz` in [`src/enttools/ops.py`](src/enttools/ops.py#L74).
+- `POST /workspaces` → `create_workspace` in [`src/enttools/ops.py`](src/enttools/ops.py#L80).
+- `GET /workspaces` → `list_workspaces` in [`src/enttools/ops.py`](src/enttools/ops.py#L98).
+- `POST /workspaces/{workspace_id}/jobs` → `create_job` in [`src/enttools/ops.py`](src/enttools/ops.py#L106).
+- `GET /jobs/{job_id}` → `get_job` in [`src/enttools/ops.py`](src/enttools/ops.py#L130).
 
 These are literal decorators. Application/router prefixes, authentication, and middleware must be checked in the corresponding setup code.
 
