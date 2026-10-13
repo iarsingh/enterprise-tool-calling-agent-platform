@@ -1,5 +1,12 @@
 # Enterprise Tool-Calling Agent Platform
 
+## Overview
+
+A tool-calling agent exercise built around an enterprise allowlist of read-only tools. `GET /tools` lists what the agent may use and `POST /call` runs an allowlisted tool, while any apply action is refused. The tool module follows an MCP-style list-and-call shape, and a versioned `/v1` API adds workspaces, tenant isolation, job approval and audit records.
+
+- **Built with:** Python, pytest, Docker, GitHub Actions
+- **Scope:** Local laptop lab from an MCP and tool-using agents track; it calls no hosted model and makes no production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
